@@ -25,8 +25,8 @@ def respond(message: str) -> str:
     '''
     result = _get_whatday()
     print(result)
-    result_disp = '\\n'.join(result)
-    return f'今日は\\n\\n{result_disp}\\n'
+    result_disp = '\n'.join(result)
+    return result_disp
 
 if __name__ == '__main__':
     pass
