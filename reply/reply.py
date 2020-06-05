@@ -2,6 +2,7 @@
 
 import greeting as gt
 import wheather as wt
+import whatday as wd
 import keywords as kwd
 
 

@@ -8,3 +8,5 @@ greeting_evening = ['good evening', 'evening', 'こんばんは', 'こんばん�
 GREETINGS = greeting_hi + greeting_morning + greeting_hello + greeting_evening
 
 WHEATHERS = ('tenki', 'wheather', '天気', 'てんき')
+
+WHATDAYS = ('what day', 'whatday', 'なんのひ', 'なんの日', '何のひ', '何の日')
