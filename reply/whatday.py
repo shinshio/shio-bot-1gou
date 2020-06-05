@@ -29,4 +29,4 @@ def respond(message: str) -> str:
     return f'今日は\\n\\n{result_disp}\\n'
 
 if __name__ == '__main__':
-    print(respond(''))
+    pass

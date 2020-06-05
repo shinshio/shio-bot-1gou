@@ -14,6 +14,8 @@ def reply(message: str) -> str:
         return gt.respond(message)
     elif message in kwd.WHEATHERS:
         return wt.respond(message)
+    elif message in kwd.WHATDAYS:
+        return wd.respond(message)
     else:
         return '理解できません'
 
