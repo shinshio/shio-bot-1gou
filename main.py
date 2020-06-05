@@ -1,11 +1,14 @@
 # coding: utf-8
 
-from flask import Flask, request, abort
 import os
+import sys
+sys.path.append('./')
+sys.path.append('/reply')
 
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
+from flask import Flask, request, abort
 
 import reply.reply as rpl
 

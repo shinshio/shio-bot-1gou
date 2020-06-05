@@ -1,5 +1,9 @@
 # coding: utf-8-sig
 
+import sys
+sys.path.append('./')
+sys.path.append('/reply')
+
 import greeting as gt
 import wheather as wt
 import keywords as kwd
