@@ -1,10 +1,5 @@
 # coding: utf-8-sig
 
-
-import sys
-sys.path.append('./')
-sys.path.append('/reply')
-
 from bs4 import BeautifulSoup
 import requests
 

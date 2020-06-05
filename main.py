@@ -1,9 +1,6 @@
 # coding: utf-8
 
 import os
-import sys
-sys.path.append('./')
-sys.path.append('/reply')
 
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
