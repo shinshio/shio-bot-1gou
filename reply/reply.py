@@ -1,6 +1,7 @@
 # coding: utf-8-sig
 
 import greeting as gt
+import omikuji as mj
 import wheather as wt
 import whatday as wd
 import keywords as kwd
@@ -16,6 +17,8 @@ def reply(message: str) -> str:
         return wt.respond(message)
     elif message in kwd.WHATDAYS:
         return wd.respond(message)
+    elif message in kwd.OMIKUJI:
+        return mj.respond(message)
     else:
         return '理解できません'
 
