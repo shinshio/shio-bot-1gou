@@ -1,10 +1,10 @@
 # coding: utf-8-sig
 
 # variables
-greeting_hi = ['hi', 'やあ', '元気', '元気？', 'げんき', 'げんき？', 'ごきげんよう', 'ご機嫌よう']
-greeting_morning = ['good morning', 'morning', 'おはよう', 'おはようございます']
-greeting_hello = ['hello', 'こんにちは', 'こんにちわ', '今日は']
-greeting_evening = ['good evening', 'evening', 'こんばんは', 'こんばんわ']
+greeting_hi = ['やあ', 'hi', 'yaa', r'genki(\?|？)', 'gokigenyou']
+greeting_morning = ['おはよう', 'good morning', 'morning', r'ohayo(u|ugozaimasu)']
+greeting_hello = ['こんにちは', 'hello', 'konnichi(ha|wa)']
+greeting_evening = ['こんばんは', 'good evening', 'evening', r'konban(ha|wa)']
 
 # dict of modules
 GREETINGS = {
@@ -14,25 +14,25 @@ GREETINGS = {
 }
 
 WHEATHERS = {
-    'KWORDS': ('tenki', 'wheather', '天気', 'てんき'),
+    'KWORDS': ('てんき', 'tenki', 'wheather'),
     'M_NAME': '天気予報（名古屋）',
     'M_FUNC': '名古屋の天気予報を表示します。'
 }
 
 WHATDAYS = {
-    'KWORDS': ('what day', 'whatday', 'なんのひ', 'なんの日', '何のひ', '何の日'),
+    'KWORDS': ('なんのひ', 'what day', 'whatday', r'(nan|nani)no(hi|nichi)'),
     'M_NAME': '今日は何の日',
     'M_FUNC': '過去の今日の出来事やイベントを表示します。'
 }
 
 OMIKUJI = {
-    'KWORDS': ('omikuji', 'おみくじ'),
+    'KWORDS': ('おみくじ', 'omikuji', r'omiku(ji|zi)'),
     'M_NAME': 'おみくじ',
     'M_FUNC': 'おみくじを引けます。点数もつけます。'
 }
 
 HELP = {
-    'KWORDS': ('help', 'おしえて', '教えて', 'わからない'),
+    'KWORDS': ('おしえて', 'help', r'o(si|shi)ete', 'wakaranai'),
     'M_NAME': 'ヘルプ機能',
     'M_FUNC': '機能の紹介をします。'
 }
