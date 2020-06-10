@@ -45,7 +45,7 @@ def respond(message: str) -> str:
         str
     '''
     key, rand = _draw_omikuji()
-    return f'今日の運勢は{key}です。点数だと{int(rand*100)}点。'
+    return f'今日の運勢は{key}です。\n点数だと{int(rand*100)}点。'
 
 if __name__ == '__main__':
     pass

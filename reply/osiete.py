@@ -4,7 +4,7 @@ import keywords as kwd
 
 def _make_doc(dict: dict):
     text = f'''
-    {dict['M_NAME']}
+    「{dict['M_NAME']}」
     {dict['M_FUNC']}
     反応ワード：{(',').join(dict['KWORDS'][:2])} など
     '''
@@ -17,11 +17,13 @@ def respond(message: str) -> str:
     returns:
         str
     '''
-    text = []
+    text = [f'''
+    以下の機能があります。※アルファベットは大文字小文字どちらでもOK。
+    ''']
     for mods in kwd.MODULES:
         text.append(_make_doc(mods))
 
     return ('').join(text)
 
 if __name__ == '__main__':
-    pass
+    print(respond(''))
