@@ -26,4 +26,4 @@ def respond(message: str) -> str:
     return ('').join(text)
 
 if __name__ == '__main__':
-    print(respond(''))
+    pass

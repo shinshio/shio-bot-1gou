@@ -45,6 +45,9 @@ def reply(message: str) -> str:
     elif _pattern_match(message, kwd.HELP):
         import osiete
         return osiete.respond(message)
+    elif _pattern_match(message, kwd.VERSIONS):
+        import version
+        return version.respond(message)
     else:
         return '理解できません'
 

@@ -37,5 +37,14 @@ HELP = {
     'M_FUNC': '機能の紹介をします。'
 }
 
+VERSIONS = {
+    'KWORDS': ('バージョン', 'version', r'baajon'),
+    'M_NAME': 'バージョン読み出し',
+    'M_FUNC': 'バージョンの確認をします。'
+}
+
 # list of dicts
-MODULES = [GREETINGS, WHEATHERS, WHATDAYS, OMIKUJI, HELP]
+MODULES = [GREETINGS, WHEATHERS, WHATDAYS, OMIKUJI, HELP, VERSIONS]
+
+# version name
+RELEASE_VERSION = 'Ver4.0'
